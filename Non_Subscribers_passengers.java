@@ -29,7 +29,9 @@ public class Non_Subscribers_passengers extends Passengers{
     void reserveCar(Car car) {
 
         if (car.getMaxCapacity() == 0 ){
-            System.out.println("Maximum capacity of the car is ZERO");
+
+            throw new IllegalArgumentException("Maximum capacity of the car is ZERO");
+
         }
 
 

@@ -25,7 +25,7 @@ public class Main {
 
 
 
-
+   try {
     for (Passengers passenger : passengers) {
         if (passenger instanceof Subscribers_passengers) {
 
@@ -35,8 +35,9 @@ public class Main {
             passenger.reserveCar(car2);
         }
         passenger.displayInformation();
-    }
-
+      }}catch (IllegalArgumentException e ){
+       System.out.println(e.getMessage());
+   }
 
 
     }
